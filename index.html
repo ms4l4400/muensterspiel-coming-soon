@@ -28,6 +28,8 @@ button:hover{background:#FFD24D}
 input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #FFC20E;outline-offset:2px}
 .fine{margin:0;font-size:12.5px;line-height:1.5;color:#F6D6D2}
 a{color:#fff}a:hover{color:#FFC20E}
+.cta{display:inline-block;margin-top:8px;font-size:17px;font-weight:800;padding:16px 28px;border-radius:12px;background:#FFC20E;color:#2E2A23;text-decoration:none}
+.cta:hover{background:#FFD24D;color:#2E2A23}
 .thanks{display:none;margin:8px 0 0;font-size:18px;font-weight:600;background:rgba(255,255,255,.12);border-radius:12px;padding:14px 20px}
 footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14px;color:#F6D6D2;margin-top:40px}
 </style>
@@ -41,19 +43,8 @@ footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14p
 <h1>Das Münster Spiel</h1>
 <p class="lead">Hier entsteht etwas Neues für unsere Stadt.<br>Bald geht's los.</p>
 
-<!-- Newsletter: trägt die Adresse im Münster 4 Life Shop ein (Double-Opt-in), Merkmal „muensterspiel“ -->
-<form id="nl" method="post" action="https://muenster-online-shop.de/contact#contact_form" accept-charset="UTF-8" target="_blank">
-<input type="hidden" name="form_type" value="customer">
-<input type="hidden" name="utf8" value="✓">
-<input type="hidden" name="contact[tags]" value="newsletter,muensterspiel">
-<label for="nl-mail">Sei als Erstes dabei:</label>
-<div class="row">
-<input id="nl-mail" type="email" name="contact[email]" placeholder="deine@email.de" autocomplete="email" required>
-<button type="submit">Eintragen</button>
-</div>
-<p class="fine">Mit deiner Eintragung bekommst du News zum Münster Spiel und zum Münster 4 Life Shop – und erfährst als Erstes, wenn es losgeht. Vorher schicken wir dir eine kurze Bestätigungs-Mail. Abmelden kannst du dich jederzeit. Mehr in der <a href="https://muenster-online-shop.de/policies/privacy-policy">Datenschutzerklärung</a>.</p>
-</form>
-<p class="thanks" id="thanks" role="status">Danke! Schau in dein Postfach und bestätige deine Adresse.</p>
+<a class="cta" href="https://muenster-online-shop.de/pages/muensterspiel">Jetzt für News eintragen</a>
+<p class="fine">Die Eintragung läuft über unseren Münster 4 Life Shop – mit Bestätigungs-Mail, abmelden jederzeit.</p>
 </main>
 <footer>
 <a href="https://www.instagram.com/muenster4life/">@muenster4life</a>
@@ -61,11 +52,5 @@ footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14p
 <a href="https://muenster-online-shop.de/policies/privacy-policy">Datenschutz</a>
 </footer>
 </div>
-<script>
-document.getElementById('nl').addEventListener('submit',function(){
-  var f=this;
-  setTimeout(function(){f.style.display='none';document.getElementById('thanks').style.display='block';},50);
-});
-</script>
 </body>
 </html>
