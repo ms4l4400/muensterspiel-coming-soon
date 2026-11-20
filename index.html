@@ -28,10 +28,10 @@ button:hover{background:#FFD24D}
 input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #FFC20E;outline-offset:2px}
 .fine{margin:0;font-size:12.5px;line-height:1.5;color:#F6D6D2}
 a{color:#fff}a:hover{color:#FFC20E}
-.cta{display:inline-block;margin-top:8px;font-size:17px;font-weight:800;padding:16px 28px;border-radius:12px;background:#FFC20E;color:#2E2A23;text-decoration:none}
+.cta{display:block;width:min(100%,340px);box-sizing:border-box;text-align:center;margin-top:8px;font-size:17px;font-weight:800;padding:16px 28px;border-radius:12px;background:#FFC20E;color:#2E2A23;text-decoration:none}
 .cta:hover{background:#FFD24D;color:#2E2A23}
-.stores{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:4px}
-.badge{display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 12px;border-radius:12px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.35);text-align:left;font-size:17px;font-weight:700;line-height:1.1;cursor:default}
+.stores{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(100%,340px);margin-top:-10px}
+.badge{display:flex;justify-content:center;align-items:center;gap:10px;padding:9px 16px 9px 12px;border-radius:12px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.35);text-align:left;font-size:17px;font-weight:700;line-height:1.1;cursor:default}
 .badge small{display:block;font-size:11px;font-weight:500;color:#D9D9D9;letter-spacing:.02em}
 .thanks{display:none;margin:8px 0 0;font-size:18px;font-weight:600;background:rgba(255,255,255,.12);border-radius:12px;padding:14px 20px}
 footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14px;color:#F6D6D2;margin-top:40px}
