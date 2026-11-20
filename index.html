@@ -30,6 +30,9 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #FFC2
 a{color:#fff}a:hover{color:#FFC20E}
 .cta{display:inline-block;margin-top:8px;font-size:17px;font-weight:800;padding:16px 28px;border-radius:12px;background:#FFC20E;color:#2E2A23;text-decoration:none}
 .cta:hover{background:#FFD24D;color:#2E2A23}
+.stores{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:4px}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 12px;border-radius:12px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.35);text-align:left;font-size:17px;font-weight:700;line-height:1.1;cursor:default}
+.badge small{display:block;font-size:11px;font-weight:500;color:#D9D9D9;letter-spacing:.02em}
 .thanks{display:none;margin:8px 0 0;font-size:18px;font-weight:600;background:rgba(255,255,255,.12);border-radius:12px;padding:14px 20px}
 footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14px;color:#F6D6D2;margin-top:40px}
 </style>
@@ -44,6 +47,10 @@ footer{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;font-size:14p
 <p class="lead">Hier entsteht etwas Neues für unsere Stadt.<br>Bald geht's los! Wenn du den Start nicht verpassen möchtest, trag dich für unsere News ein.</p>
 
 <a class="cta" href="https://muenster-online-shop.de/pages/muensterspiel">Jetzt für News eintragen</a>
+<div class="stores" aria-label="Bald als App">
+<span class="badge"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span><small>Bald im</small>App Store</span></span>
+<span class="badge"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span><small>Bald bei</small>Google Play</span></span>
+</div>
 </main>
 <footer>
 <a href="https://www.instagram.com/muenster4life/">@muenster4life</a>
